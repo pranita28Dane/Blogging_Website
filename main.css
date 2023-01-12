@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#c5c2c2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.nav-horizontal{
+    background-color: #444343;
+    margin-top: 10px;
+    display: grid;
+    height: 70px;
+}
+.navlinks-horizontal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    padding: 0px 80px;
+}
+.navlinks-horizontal li{
+    list-style: none;
+}
+.navlinks-horizontal li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 8px;
+    background-color: #3a3838;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.navlinks-horizontal li a:hover,#navlinks li a:hover{
+    color: #00ffff;    
+}
+#hamburger{
+    margin-left: 20px;
+    font-size: 25px;
+    display: none;
+    align-self: center;
+    cursor: pointer;
+}
+.line{
+    margin: 8px 0px;
+    width: 100%;
+    border:5px solid #d2d3d2;
+    border-radius: 99px;
+}
+.inner-line{
+    margin: 8px 0px;
+    width: 100%;
+    border:6px solid #d2d3d2;
+    border-radius: 99px;
+}
+
+.navbar{
+    /* height: 100vh; */
+    display: flex;
+    align-items: baseline;
+    flex-direction:column; 
+    background-color:#444343;
+    color: #c5c2c2;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left:-300px;
+    transition: 2s ease-in-out;
+    transform: translateX(300px);
+    font-size: 20px;
+}
+/* hamburger */
+
+.navbar button,.hamburger{
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    color: #d2d3d2;
+    /* display: none; */
+    cursor: pointer;
+}
+
+#navlinks{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0px 80px;
+    line-height: 10vh;
+    justify-content: start;
+    align-items: flex-start;
+}
+#navlinks li{
+    list-style: none;
+
+}
+#navlinks li a{
+    color: white;
+    padding: 10px 8px;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #383838;
+    color: white;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+   
+}
+footer ul li{
+    list-style: none;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    color: #00ffff;
+}
+footer h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.social li{
+    margin: 2px;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+      
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+   
+    background: #55ACEE;
+    color: white;
+  }
+  /* Google */
+  .fa-google{
+   
+    background: #e04949;
+    color: white;
+
+  }
+  /* Wifi */
+  .fa-rss{
+   text-align: center;
+    background: rgb(255, 196, 0);
+    color: white;
+  }
+/* Youtube */
+.fa-youtube{
+    
+    background: red;
+    color: white;
+}
+.end{
+    padding-bottom: 40px;
+}
+.end span{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .waffle img{
+        width: 100%;
+    }
+
+}
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width:992px) {
+    .navbar{
+        /* display: flex; */
+    }
+    .navlinks-horizontal{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+    body{
+        width: 100%;
+    }
+
+}
+

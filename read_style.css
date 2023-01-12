@@ -1,0 +1,48 @@
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 2px;
+}
+.describe{
+    display: flexbox;
+    align-self: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #464646;
+}
+.describe h3{
+    padding-bottom: 40px;
+}
+.describe p{
+    padding-bottom: 10px;
+}
+.icon-img img{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    height: 50px;
+}
+.waffle img{
+    padding-top: 10px;
+}
+
+.read{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #464646;
+}
+.big{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+

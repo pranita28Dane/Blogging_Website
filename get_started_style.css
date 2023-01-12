@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#c3c3c3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top{
+    margin-top: 20px;
+    
+}
+.top a{
+     text-decoration: none;
+     color: #808080;
+     font-weight: bold;
+}
+
+.container{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.create{
+    width: 70%;
+    margin: 0 auto;
+}
+button{
+    border: none;
+   
+}
+button:hover{
+    opacity: 0.8;
+}
+.fa-facebook, .facebook{
+ color: white;
+ background-color: #4662b0;
+}
+.fa{
+    padding: 5px;
+    border-right: 1px solid #808080;
+}
+
+.google{
+     color: #606971;
+     background-color: white;
+    
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+.text{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* media-queries */
+@media screen and (max-width:1255px) {
+    .container{
+        width: 40%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container{
+        width: 90%;
+    }
+}
